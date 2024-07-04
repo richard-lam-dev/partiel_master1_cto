@@ -19,6 +19,7 @@ Installez les bibliothèques nécessaires avec pip :
 pip install pandas matplotlib
 
 
+
 ### Structure du Projet
 ```markdown
 ## Structure du Projet
