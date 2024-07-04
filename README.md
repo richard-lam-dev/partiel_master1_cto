@@ -76,3 +76,5 @@ adolescent      223
 enfant          117
 Name: categorie_age, dtype: int64
 ```
+
+
