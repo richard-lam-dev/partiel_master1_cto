@@ -17,6 +17,7 @@ Pour exécuter ce script, vous aurez besoin de Python et de quelques bibliothèq
 Installez les bibliothèques nécessaires avec pip :
 ```bash
 pip install pandas matplotlib
+```
 
 ### Utilisation
 Pour exécuter le script, suivez ces étapes :
