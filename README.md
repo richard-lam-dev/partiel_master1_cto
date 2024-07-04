@@ -21,7 +21,7 @@ pip install pandas numpy matplotlib
 ```
 
 Structure du Projet  
-analyse_adherents.py : Script Python contenant tout le code pour charger, analyser et visualiser les données des adhérents.
+analyse_adherents.py : Script Python contenant tout le code pour charger, analyser et visualiser les données des adhérents.  
 adherents.csv : Fichier CSV généré contenant les données fictives des adhérents (créé par le script).
 Utilisation
 Pour exécuter le script, suivez ces étapes :
