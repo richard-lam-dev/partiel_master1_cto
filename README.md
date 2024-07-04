@@ -1,6 +1,6 @@
 # partiel_master1_cto
 
-Analyse des Adhérents de l'Association Sportive
+Analyse des Adhérents de l'Association Sportive  
 Ce projet contient un script Python conçu pour analyser les données démographiques des membres d'une association sportive. Le script offre des visualisations qui aident à comprendre la répartition par âge et par genre des adhérents, facilitant ainsi la planification des activités et la gestion des communications.
 
 Prérequis
