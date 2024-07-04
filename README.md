@@ -18,22 +18,14 @@ Installez les bibliothèques nécessaires avec pip :
 ```bash
 pip install pandas matplotlib
 
-
-
-### Structure du Projet
-```markdown
-## Structure du Projet
-
-Le fichier `analyse_adherents.py` contient tout le code pour charger, analyser et visualiser les données des adhérents.
-
-## Utilisation
-
+### Utilisation
 Pour exécuter le script, suivez ces étapes :
 
-1. Ouvrez un terminal ou une invite de commande.
-2. Naviguez vers le répertoire où se trouve le script.
-3. Exécutez le script avec l'une des commandes suivantes :
-   ```bash
-   python analyse_adherents.py
-   # Ou sur certains systèmes
-   python3 analyse_adherents.py
+Ouvrez un terminal ou une invite de commande.
+Naviguez vers le répertoire où se trouve le script.
+Exécutez le script avec l'une des commandes suivantes :
+
+python analyse_adherents.py
+# Ou sur certains systèmes
+python3 analyse_adherents.py
+
