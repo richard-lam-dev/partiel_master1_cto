@@ -14,10 +14,10 @@ Pour exécuter ce script, vous aurez besoin de Python et de quelques bibliothèq
 
 ### Dépendances Python
 
-Ce script utilise `pandas` pour la manipulation de données et `matplotlib` pour la visualisation. Installez ces packages en utilisant pip :
+Ce script utilise `pandas` pour la manipulation de données, `numpy` pour générer des ensembles de données aléatoires et `matplotlib` pour la visualisation. Installez ces packages en utilisant pip :
 
 ```bash
-pip install pandas matplotlib
+pip install pandas numpy matplotlib
 ```
 
 Structure du Projet  
