@@ -29,8 +29,8 @@ Pour exécuter le script, suivez ces étapes :
 1. Cloner le Répository :
    
 ```bash
-git clone https://github.com/votre-utilisateur/analyse-adherents.git
-cd analyse-adherents
+git clone https://github.com/richard-lam-dev/partiel_master1_cto.git
+cd partiel_master1
 ```
 
 2. Exécuter le script
