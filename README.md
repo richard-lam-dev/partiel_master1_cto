@@ -39,21 +39,21 @@ cd analyse-adherents
 python analyse_adherents.py
 ```
 
-Fonctionnalités du Script
-Génération des Données
+Fonctionnalités du Script  
+Génération des Données  
 Le script génère des données fictives pour 1000 adhérents avec des informations telles que l'identifiant, le nom, l'âge, le genre, l'email et le contact parental pour les mineurs.
 
-Chargement des Données
+Chargement des Données  
 Les données générées sont chargées à partir du fichier CSV dans un DataFrame pandas.
 
-Analyse des Données
+Analyse des Données  
 Le script segmente les adhérents en catégories d'âge et calcule la distribution des genres. Cela permet de comprendre combien d'adhérents appartiennent à chaque groupe d'âge, essentiel pour la planification des cours et des événements.
 
-Visualisation des Résultats
+Visualisation des Résultats  
 Le script génère des graphiques illustrant la répartition des adhérents par âge et par genre. Ces visualisations aident à comprendre rapidement les données démographiques et à prendre des décisions informées.
 
-Exemple de Sortie
-Voici un aperçu de la sortie générée par le script :
+Exemple de Sortie  
+Voici un aperçu de la sortie générée par le script :  
 
 ```bash
    id          nom  age     genre                     email
