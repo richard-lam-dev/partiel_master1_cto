@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const { Sequelize, DataTypes } = require('sequelize');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
+require('dotenv').config(); // Charger les variables d'environnement
 
 const app = express();
 app.use(bodyParser.json());
@@ -47,7 +48,7 @@ const Cours = sequelize.define('Cours', {
   }
 });
 
-// Relation entre Adherent et Cours
+// Relation entre adherent et cours
 Adherent.belongsToMany(Cours, { through: 'AdherentCours' });
 Cours.belongsToMany(Adherent, { through: 'AdherentCours' });
 
@@ -57,9 +58,9 @@ const initializeDatabase = async () => {
 
   // Peuplement de la base de données
   const adherents = await Adherent.bulkCreate([
-    { name: 'Patoche', email: 'damien.dasilva@eemi.com', age: 30 },
-    { name: 'Marketa', email: 'victor.dane@eemi.com', age: 15, parentalContact: 'sebastian.onise@eemi.com' },
-    { name: 'Richard Lam', email: 'richard.lam1998@gmail.com', age: 13,  parentalContact: 'richard.lam@eemi.com'}
+    { name: 'Patoche', email: process.env.TEST_EMAIL1, age: 30 },
+    { name: 'Vic', email: process.env.TEST_EMAIL2, age: 15, parentalContact: process.env.TEST_PARENTAL_CONTACT1 },
+    { name: 'Richard Lam', email: process.env.TEST_EMAIL3, age: 13, parentalContact: process.env.TEST_PARENTAL_CONTACT2 }
   ]);
 
   const courses = await Cours.bulkCreate([
@@ -71,7 +72,7 @@ const initializeDatabase = async () => {
 
   // Assignation des adhérents aux cours
   const patoche = adherents[0];
-  const marketa = adherents[1];
+  const vic = adherents[1];
   const richard = adherents[2];
   const dance = courses[0];
   const soccer = courses[1];
@@ -79,11 +80,11 @@ const initializeDatabase = async () => {
   const chant = courses[3];
 
   await patoche.addCours(dance);
-  await marketa.addCours(dance);
+  await vic.addCours(dance);
   await richard.addCours(dance);
   await patoche.addCours(soccer);
   await richard.addCours(soccer);
-  await marketa.addCours(basket);
+  await vic.addCours(basket);
   await richard.addCours(chant);
 
 };
@@ -92,12 +93,12 @@ initializeDatabase();
 
 // Configuration de Nodemailer
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 587,
-  secure: false,
+  host: process.env.SMTP_HOST,
+  port: process.env.SMTP_PORT,
+  secure: process.env.SMTP_SECURE === 'true',
   auth: {
-    user: 'richard.lam1998@gmail.com',
-    pass: 'nohn mszk yobj qciu'
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS
   }
 });
 
@@ -137,7 +138,7 @@ app.post('/sendEmails', async (req, res) => {
     console.log('Recipients:', recipients);
 
     const mailOptions = {
-      from: 'richard.lam1998@gmail.com',
+      from: process.env.SMTP_USER,
       to: recipients.join(','),
       subject: subject,
       text: message

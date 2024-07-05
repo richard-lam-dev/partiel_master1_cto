@@ -79,7 +79,7 @@ function App() {
                     <Form.Label>Message</Form.Label>
                     <Form.Control
                         as="textarea"
-                        rows={3}
+                        rows={7}
                         placeholder="Message"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
