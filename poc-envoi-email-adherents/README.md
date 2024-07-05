@@ -1,5 +1,5 @@
 ## Gestion des Adhésions de l'Association
-Ce projet est un prototype pour gérer les adhésions et les paiements de cotisations pour une petite association. L'application fournit des fonctionnalités d'inscription des utilisateurs, de connexion et de paiement des cotisations.
+Ce projet est un prototype pour gérer l'envoi de mails à tous les adhérents d’un cours, d’une catégorie de cours, ou inscrits en général.
 
 Prérequis
 Node.js (version 12 ou supérieure)
