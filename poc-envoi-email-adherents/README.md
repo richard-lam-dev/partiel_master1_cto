@@ -6,7 +6,7 @@ Node.js (version 12 ou supérieure)
 npm (livré avec Node.js)
 SQLite (pour la base de données locale)
 
-Installation
+Installation  
 Installation du Backend
 
 1. Aller dans le Répository :
