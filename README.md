@@ -36,6 +36,7 @@ cd partiel_master1
 2. Exécuter le script
 
 ```bash
+cd python
 python analyse_adherents.py
 ```
 
