@@ -46,7 +46,7 @@ node server.js
 Installation du Client
 1. Naviguer vers le répertoire client :
 ```bash
-   cd client
+cd client
 ```
 2. Installer les dépendances du client :
 ```bash
